@@ -7,17 +7,17 @@
     <title>Log in Page</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <div id="login">
-        <h1> Log in to your account </h1>
-        <form action="success.html">
+        <h1>Log in to your account</h1>
+
+        <form id="loginForm">
 
             <div class="details">
-                <label for="name">Name : </label>
-                <input type="text" id="name" class="ip" placeholder="Name">
+                <label for="username">Name :</label>
+                <input type="text" id="username" class="ip" placeholder="Name">
             </div>
 
             <div class="details">
@@ -26,19 +26,16 @@
             </div>
 
             <div class="details">
-                <label for="mob">Mobile No. : </label>
-                <input type="tel" class='ip' id='mob' placeholder="0000000000">
-            </div>
-
-            <div class="details">
-                <label for="pswd">Password:</label>
-                <input type="password" class='ip' id='pswd' placeholder="Enter a strong password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" class="ip" placeholder="Enter your password">
             </div>
 
             <br>
-            <button type="submit" id="submit_btn">Submit page</button>
+            <button type="submit" id="submit_btn">Submit</button>
         </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
