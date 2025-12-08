@@ -8,20 +8,26 @@
 </head>
 <body>
     <div class="container">
-        <h2>Sign Up for a new account</h2>
-        <form id="registerForm">
+        <h2>sign up for a new account</h2>
+        
+        <form id="registerForm" action="login2.html">
             <div class="details">
                 <label for="username">Username </label>
-                <input id="username" type="text" placeholder="Enter your username" required>
+                <input id="username" type="text" placeholder="Enter username" required>
             </div>
             
             <div class="details">
-                <label for="pswd">Password </label>
-                <input id="pswd" type="password" placeholder="password" required>
+                <label for="pswd">Password</label>
+                <input id="pswd" type="password" placeholder="Password" required>
             </div>
 
             <button type="submit">Create Account</button>
+            </div>
         </form>
-        <p>New user? <a href="login2.html">Sign up</a></p>
+        <p class="bottom-text">
+            Already have an account? 
+            <a href="login2.html">Sign up</a>
+        </p>
+        
 </body>
 </html>

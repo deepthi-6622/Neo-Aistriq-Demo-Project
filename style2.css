@@ -1,48 +1,60 @@
 body {
-    background: whitesmoke;
-    font-style: normal;
+    background: #fafafa;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0;
+    
     
 }
 
 .container {
     width: 400px;
-    margin: 150px auto;
-    background: rgb(135, 235, 162);
+    padding: 30px 40px;
+    background: #ffffff;
     padding: 30px;
-    border-radius: 12px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
     
 }
 
 h2 {
+    font-weight: 600;
     text-align: center;
-    margin-bottom: 20px;
+    color: #262626;
+    margin-bottom: 30px;
 }
 
 .details{
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
 label{
     display:block;
     margin-bottom: 10px;
+    font-size: 15px;
     font-weight: bold;
+    color:#444;
 }
 
 input{
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background: #fafafa;
+    margin-top: 10px;
     font-size: 15px;
 }
 
-p{
-    text-align: center;
+/*p{
+    
     margin-top: 15px;
     font-size: 15px;
-}
-
+}*/
 a{
     color: black;
     font-weight: bold;
@@ -51,10 +63,10 @@ a{
 a:hover{
     text-decoration: underline;
 }
-button{
+button, #back_btn{
     width: 100%;
     padding: 10px;
-    background-color:rgb(0, 119, 255);
+    background-color: #0095f6;
     color: white;
     border: None;
     font-size: 15px;
@@ -62,7 +74,14 @@ button{
     margin-top: 10px;
 }
 
-button:hover{
-    background-color:  rgba(47, 255, 0, 0.352);
+button:hover,#back_btn:hover{
+    background-color:  #007acc;
     color: black;
+}
+
+.bottom-text{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
 }
