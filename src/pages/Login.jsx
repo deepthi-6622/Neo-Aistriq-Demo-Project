@@ -40,11 +40,6 @@ export default function Login() {
             0% { text-shadow: 0 0 15px rgba(255,255,255,0.9); }
             100% { text-shadow: 0 0 25px rgba(255,255,255,1); }
           }
-
-          @keyframes softFloat {
-            0% { transform: translate(-50%, -50%) translateY(0); }
-            100% { transform: translate(-50%, -50%) translateY(-7px); }
-          }
         `}
             </style>
 
@@ -59,20 +54,31 @@ export default function Login() {
                     width: "430px",
                     padding: "40px 32px",
 
-                    background: "rgba(10, 10, 25, 0.35)",   // Transparent glassy look
+                    background: "#110a1900",
                     borderRadius: "16px",
-
                     border: "0.5px solid rgba(200,150,255,0.25)",
                     boxShadow: "0 0 10px rgba(150,100,255,0.20)",
-                    backdropFilter: "blur(2px)",
-
-
-
-                    animation: "popCard 0.55s ease-out, softFloat 3s ease-in-out infinite alternate",
-                    textAlign: "center",
                     backdropFilter: "blur(5px)",
+
+                    animation: "popCard 0.55s ease-out",
+
+                    textAlign: "center",
+                    transition: "0.25s ease",
+                }}
+
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "translate(-50%, -50%) scale(1.03)";
+                    e.currentTarget.style.boxShadow =
+                        "0 0 25px rgba(180,120,255,0.55)";
+                }}
+
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "translate(-50%, -50%) scale(1)";
+                    e.currentTarget.style.boxShadow =
+                        "0 0 10px rgba(150,100,255,0.20)";
                 }}
             >
+
                 {/* TITLE */}
                 <h1
                     style={{
