@@ -5,7 +5,7 @@ const BACKEND_URL = "http://localhost:5000/auth/discord";//Backend URL that hand
 export default function Login() {
     //redirects the user to backend OAuth login
     const handleLogin = () => {
-        window.location.href = BACKEND_URL;
+        window.location.href = "http://localhost:5000/auth/discord";;
     };
 
     return (
